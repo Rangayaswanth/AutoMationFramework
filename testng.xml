@@ -1,10 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/ranga/IdeaProjects/AutoMationFramework">
-<!--        <classes>-->
-
-<!--            </class>-->
-<!--        </classes>-->
-    </test>
-</suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/ranga/IdeaProjects/AutoMationFramework"><classes><class name="com.yaswanth.tests.OrangeHRTestCases.TestOrangeHRLogin"><methods><include name="testOrangeHR_POM"/></methods></class><class name="com.yaswanth.tests.vwoTestCases.TestVwoLogin_02_POM_PropertyReader"><methods><include name="testloginNegativeVWO"/><include name="testLoginPositiveVWO"/></methods></class><class name="com.yaswanth.tests.vwoTestCases.TestVwoLogin_POM"><methods><include name="testloginNegativeVWO"/><include name="testLoginPositiveVWO"/></methods></class></classes></test></suite>

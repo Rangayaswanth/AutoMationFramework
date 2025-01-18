@@ -1,7 +1,10 @@
 package com.yaswanth.pages.pageObjectModel.vwo;
 
+import com.yaswanth.utils.PropertiesReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
+import java.util.Properties;
 
 public class LoginPage {
 
@@ -24,7 +27,7 @@ public class LoginPage {
 
 
     public String loginToVWOLoginInvalidCreds(String user, String pwd) {
-        driver.get("https://app.vwo.com");
+        driver.get(PropertiesReader.readKey("url"));
         driver.findElement(username).sendKeys(user);
         driver.findElement(password).sendKeys(pwd);
         driver.findElement(signButton).click();
@@ -38,7 +41,7 @@ public class LoginPage {
     }
 
     public void loginToVWOLoginvalidCreds(String user, String pwd) {
-        driver.get("https://app.vwo.com");
+        driver.get(PropertiesReader.readKey("url"));
         driver.findElement(username).sendKeys(user);
         driver.findElement(password).sendKeys(pwd);
         driver.findElement(signButton).click();
