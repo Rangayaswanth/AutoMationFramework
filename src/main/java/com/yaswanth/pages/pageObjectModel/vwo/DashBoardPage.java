@@ -1,9 +1,10 @@
 package com.yaswanth.pages.pageObjectModel.vwo;
 
+import com.yaswanth.Base.CommonToAllPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class DashBoardPage {
+public class DashBoardPage extends CommonToAllPage {
     WebDriver driver;
 
     public DashBoardPage(WebDriver driver) {
@@ -15,12 +16,8 @@ public class DashBoardPage {
 
 
     public String loggedInUserName(){
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        return  driver.findElement(UserNameOnDashboard).getText();
+        visibilityOfElement(UserNameOnDashboard);
+        return getText(UserNameOnDashboard);
 
 
     }
